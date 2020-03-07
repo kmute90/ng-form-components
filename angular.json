@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "gravity": {
+    "ng-form-components": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "gravity:build"
+            "browserTarget": "ng-form-components:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "gravity:build:production"
+              "browserTarget": "ng-form-components:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "gravity:build"
+            "browserTarget": "ng-form-components:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "gravity:serve"
+            "devServerTarget": "ng-form-components:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "gravity:serve:production"
+              "devServerTarget": "ng-form-components:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "gravity"
+  "defaultProject": "ng-form-components"
 }
