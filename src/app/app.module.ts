@@ -24,7 +24,6 @@ import { TgFormFieldsModule } from './form-fields/tg-form-fields.module';
     MatInputModule,
     MatButtonModule,
     FormsModule,
-    ReactiveFormsModule,
   ],
   providers: [
   ],

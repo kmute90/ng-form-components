@@ -12,7 +12,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.form = this.fb.group({
-      fullName: [null, Validators.required]
+      fullName: [null, Validators.required],
+      description: [null, Validators.required],
     });
   }
 

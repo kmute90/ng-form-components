@@ -5,12 +5,13 @@
         <mat-card-title>Form validation</mat-card-title>
         <mat-card-subtitle></mat-card-subtitle>
         <form [formGroup]="form">
-          <!-- <tg-input
-            [title]="'company-edit.fullName' | translate"
-            formControlName="fullName"
-            [formControl]="form.get('fullName')"
+
+          <tg-input
+            [form]="form"
+            title="Description"
+            input="description"
           >
-          </tg-input> -->
+          </tg-input>
 
           <mat-form-field>
             <mat-label>Full name</mat-label>
@@ -19,6 +20,7 @@
               The field is required
             </mat-error>
           </mat-form-field>
+
           <br/>
           <br/>
           <button mat-raised-button (click)="save()" color="primary"

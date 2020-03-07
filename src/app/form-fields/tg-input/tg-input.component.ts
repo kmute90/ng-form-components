@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'tg-input',
@@ -7,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TgInputComponent implements OnInit {
   constructor() { }
+
+  @Input() form: FormGroup;
+  @Input() input: string;
+
+  @Input() title: string;
+  @Input() readonly: boolean = false;
 
   ngOnInit(): void { }
 }
