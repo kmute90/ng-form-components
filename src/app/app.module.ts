@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { MatCardModule, MatFormFieldModule, MatInputModule, MatButtonModule } from '@angular/material';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { TgFormFieldsModule } from './form-fields/tg-form-fields.module';
 
 
@@ -23,7 +23,6 @@ import { TgFormFieldsModule } from './form-fields/tg-form-fields.module';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    FormsModule,
     ReactiveFormsModule,
   ],
   providers: [
